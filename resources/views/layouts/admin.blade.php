@@ -47,6 +47,22 @@
                 <span>{{ __('Dashboard') }}</span></a>
         </li>
 
+        <!-- Nav Item - Personas -->
+        <li class="nav-item {{ Nav::isRoute('clientes.index') }}">
+            <a class="nav-link" href="{{ route('clientes.index') }}">
+                <i class="fas fa-fw fa-users"></i>
+                <span>{{ __('Clientes') }}</span>
+            </a>
+        </li>
+
+        <!-- Nav Item - Promocion -->
+        <li class="nav-item {{ Nav::isRoute('promocions.index') }}">
+            <a class="nav-link" href="{{ route('promocions.index') }}">
+                <i class="fas fa-fw fa-users"></i>
+                <span>{{ __('Promocions') }}</span>
+            </a>
+        </li>
+
         <!-- Divider -->
         <hr class="sidebar-divider">
 
